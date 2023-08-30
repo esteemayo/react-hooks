@@ -49,42 +49,42 @@ const Form = () => {
   }, [people.length]);
 
   return (
-    <div className="col">
+    <div className='col'>
       <h2>Add a person:</h2>
       <hr />
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className='form-group'>
           <input
-            type="text"
+            type='text'
             className={`form-control ${errors.firstName && 'is-invalid'}`}
-            name="firstName"
-            placeholder="First Name"
+            name='firstName'
+            placeholder='First Name'
             value={values.firstName}
             onChange={handleChange}
             ref={firstNameInput}
           />
           {errors.firstName && (
-            <div className="invalid-feedback">
+            <div className='invalid-feedback'>
               {errors.firstName}
             </div>
           )}
         </div>
-        <div className="form-group">
+        <div className='form-group'>
           <input
-            type="text"
+            type='text'
             className={`form-control ${errors.lastName && 'is-invalid'}`}
-            name="lastName"
-            placeholder="Last Name"
+            name='lastName'
+            placeholder='Last Name'
             value={values.lastName}
             onChange={handleChange}
           />
           {errors.lastName && (
-            <div className="invalid-feedback">
+            <div className='invalid-feedback'>
               {errors.lastName}
             </div>
           )}
         </div>
-        <button type="submit" className="btn btn-success">Add person</button>
+        <button type='submit' className='btn btn-success'>Add person</button>
       </form>
     </div>
   );
