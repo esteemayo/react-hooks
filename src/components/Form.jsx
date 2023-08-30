@@ -7,7 +7,7 @@ const Form = () => {
   const { people, addPerson } = useGlobalContext();
   const firstNameInput = useRef(null);
 
-  const validatePersonForm = values => {
+  const validatePersonForm = (values) => {
     const errors = {};
 
     if (values.firstName.trim() === '') {
