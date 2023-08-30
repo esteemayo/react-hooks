@@ -31,7 +31,12 @@ const Form = () => {
     firstNameInput.current.focus();
   };
 
-  const { values, errors, handleChange, handleSubmit } = useForm(addPersonFromForm, { firstName: '', lastName: '' }, validatePersonForm);
+  const {
+    values,
+    errors,
+    handleChange,
+    handleSubmit,
+  } = useForm(addPersonFromForm, { firstName: '', lastName: '' }, validatePersonForm);
 
   const printNumberOfPeople = useCallback(() => {
     console.log(`Number of people: ${people.length}`)
