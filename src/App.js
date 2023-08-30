@@ -1,6 +1,6 @@
 import NewestPerson from './components/NewestPerson';
-import People from './components/People';
 import Form from './components/Form';
+import People from './components/People';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
