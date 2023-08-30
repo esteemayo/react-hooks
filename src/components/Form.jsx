@@ -1,7 +1,7 @@
 import { useMemo, useRef, useCallback } from 'react';
 
-import { useGlobalContext } from '../context/Context';
 import { useForm } from '../util/hooks';
+import { useGlobalContext } from '../context/Context';
 
 const Form = () => {
   const { people, addPerson } = useGlobalContext();
