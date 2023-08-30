@@ -1,5 +1,5 @@
-import { useGlobalContext } from '../context/Context';
 import Person from './Person';
+import { useGlobalContext } from '../context/Context';
 
 const People = () => {
   const { people } = useGlobalContext();
