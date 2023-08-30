@@ -4,7 +4,7 @@ export const useForm = (callback, initialState = {}, validate) => {
 	const [values, setValues] = useState(initialState);
 	const [errors, setErrors] = useState({});
 
-	const handleChange = e => {
+	const handleChange = (e) => {
 		setValues({ ...values, [e.target.name]: e.target.value });
 	};
 
